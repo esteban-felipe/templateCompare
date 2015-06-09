@@ -1,0 +1,29 @@
+#match("data:Order")
+<html>
+	<body>
+		An order for for $node.client.name was approved.
+		<br />
+		The order was sent by $node.Client.Contact for a total of $node.Amount
+		<br />
+		$context.applyTemplates()
+	</body>
+</html>
+#end
+#match("data:Items")
+  <table>
+  	<tr>
+  		<td>ID</td>
+  		<td>Product</td>
+  		<td>Quantity</td>
+  		<td>Price</td>
+  	</tr>
+  	$context.applyTemplates("data:item")
+#end
+#match("data:item")
+  <tr>
+  	<td>$node.data_id</td>
+  	<td>$node.data_product_name</td>
+  	<td>$node.data_quantity</td>
+  	<td>$node.data_price</td>
+  </tr>
+#end

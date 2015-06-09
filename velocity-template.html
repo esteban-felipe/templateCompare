@@ -1,0 +1,23 @@
+<html>
+	<body>
+		An order for for $Order.Client.Name was approved.
+		<br />
+		The order was sent by $Order.Client.Contact for a total of $Order.Amount
+		<br />
+		<table>
+			<tr>
+				<td>ID</td>
+				<td>Product</td>
+				<td>Quantity</td>
+				<td>Price</td>
+			</tr>
+			#foreach ( $item in $Order.Items )
+			<tr>
+				<td>$item.id</td>
+				<td>$item.product_name</td>
+				<td>$item.quantity</td>
+				<td>$item.price</td>
+			</tr>
+			#end
+	</body>
+</html>

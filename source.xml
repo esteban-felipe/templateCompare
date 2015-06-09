@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data:Order xmlns:data="http://examples.org/dataSchema">
+	<data:Client>
+		<data:Name>Acme</data:Name>
+		<data:Contact>Esteban Felipe</data:Contact>
+	</data:Client>
+	<data:Amount>5000</data:Amount>
+	<data:Items>
+		<data:item>
+			<data:id>1</data:id>
+			<data:product_name>Something</data:product_name>
+			<data:quantity>1</data:quantity>
+			<data:amount>3000</data:amount>
+		</data:item>
+		<data:item>
+			<data:id>2</data:id>
+			<data:product_name>Other thing</data:product_name>
+			<data:quantity>2</data:quantity>
+			<data:amount>1000</data:amount>
+		</data:item>
+	</data:Items>
+</data:Order>
